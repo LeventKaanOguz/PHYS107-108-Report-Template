@@ -60,7 +60,7 @@
 \textbf{Name/Surname:} John Doe \hfill \textbf{Date:} DD.MM.YYYY % Use Day.Month.Year standard
 
 \textbf{Student ID:} xxxxxxx \hfill \textbf{Signature:}
-    \includegraphics[width=0.02\linewidth]{image.png} % Add your signature, use filename "image.png"!
+    \includegraphics[width=0.02\linewidth]{./images/image.png} % Add your signature, use filename "image.png"!
 
 
 \textbf{Section:} CHANGE THIS TO YOUR SECTION
@@ -97,7 +97,7 @@
 % Example of figure environment usage with includegraphics
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{figure1.eps}
+    \includegraphics[width=0.5\linewidth]{./images/figure1.eps}
     \caption{Setup for experiment 1.}
     \label{fig:setupexp1}
 \end{figure}
@@ -117,7 +117,7 @@ Figure~\ref{fig:exp1data}
 % Example of EPS file import. You can use other file types as well. Remember, \includegraphics only works on images.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{figure1.eps}
+\includegraphics[width=0.8\textwidth]{./images/figure1.eps}
 \caption{All data we took for Experiment 1, without any data cleaning and choice of data set.}
 \label{fig:exp1data}
 \end{figure}
@@ -131,13 +131,13 @@ Figure~\ref{fig:exp1data}
 \begin{figure}[H]
     \begin{subfigure}{0.5\textwidth}
 \centering
-\includegraphics[width=0.8\textwidth]{EquipotentialLines.eps}
+\includegraphics[width=0.8\textwidth]{./images/EquipotentialLines.eps}
 \caption{Drawn equipotential lines from MATLAB.}
 \label{sfig:eq}
     \end{subfigure}
     \begin{subfigure}{0.5\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{EquipotentialLinesWithWasher.eps}
+\includegraphics[width=1\textwidth]{./images/EquipotentialLinesWithWasher.eps}
 \caption{Drawn equipotential lines with washer on the paper from MATLAB.}
 \label{sfig:eqwasher}
     \end{subfigure}
@@ -198,13 +198,13 @@ Figure~\ref{fig:exp1data}
 % Include MATLAB code snippets or link to repository.
 
 % Examples of how to add MATLAB code as a listing.
-\lstinputlisting[caption={MATLAB Code for Our Collective Plot of Data in Figure~\ref{fig:example}}, label={lst:collective_plot}]{Exp1PartA.m}
+\lstinputlisting[caption={MATLAB Code for Our Collective Plot of Data in Figure~\ref{fig:example}}, label={lst:collective_plot}]{./matlab/Exp1PartA.m}
 \vspace{10pt} % Adds some vertical space between the code block and the explanation
 
-\lstinputlisting[caption={MATLAB Code for Equopotential Line Figure}, label={lst:collective_plot}]{Exp2PartA.m}
+\lstinputlisting[caption={MATLAB Code for Equopotential Line Figure}, label={lst:collective_plot}]{./matlab/Exp2PartA.m}
 \vspace{10pt} % Adds some vertical space between the code block and the explanation
 
-\lstinputlisting[caption={MATLAB Code for Equopotential Line with Washer Figure}, label={lst:collective_plot}]{Exp2PartB.m}
+\lstinputlisting[caption={MATLAB Code for Equopotential Line with Washer Figure}, label={lst:collective_plot}]{./matlab/Exp2PartB.m}
 \vspace{10pt} % Adds some vertical space between the code block and the explanation
 
 \subsection{2. Images}
@@ -216,22 +216,22 @@ Figure~\ref{fig:exp1data}
 
 \subsection{3. Figures}
 % Include figures
-\setcounter{figure}{0}
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{figure1.eps}
+\includegraphics[width=0.8\textwidth]{./images/figure1.eps}
 \caption{All data we took for Experiment 1, without any data cleaning and choice of data set. Mentioned as Fig~\ref{fig:example}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{EquipotentialLines.eps}
+\includegraphics[width=0.8\textwidth]{./images/EquipotentialLines.eps}
 \caption{Drawn equipotential lines from MATLAB. Mentioned as Fig~\ref{fig:eq}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{EquipotentialLinesWithWasher.eps}
+\includegraphics[width=0.8\textwidth]{./images/EquipotentialLinesWithWasher.eps}
 \caption{Drawn equipotential lines from MATLAB. Mentioned as Fig~\ref{fig:eqwasher}}
 \end{figure}
 

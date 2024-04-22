@@ -18,5 +18,5 @@ I started writing my reports in $\LaTeX$ from the very beginning of the PHYS107 
 ## Known Bugs & Acknowledgements
 - If you see a line that includes `\setcounter...` remove or comment it out (you can comment a line with using % before the part you want to comment), it is problematic and your references may not work.
 - References *MUST* be in `references.bib` file in appropriate format, you can check it from internet (most of the time you can find already existing or transform it)
-- Do not forget to add your signature as `image.png` and make necessary size adjustments.
+- Do not forget to add your signature as `image.png` inside of `images` folder and make necessary size adjustments.
 - I am too lazy to organize my files, will do that in a later day. 
