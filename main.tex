@@ -1,6 +1,8 @@
-\documentclass[11pt]{article}
-\usepackage[margin=1in]{geometry}
+\documentclass[10pt]{article}
 \usepackage{graphicx}
+\usepackage[backend=biber,style=numeric,sorting=ynt]{biblatex}
+\usepackage{appendix}
+% \usepackage[margin=1in]{geometry} DON'T REMOVE THE COMMENT.
 \usepackage{amsmath, amssymb}
 \usepackage{hyperref}
 \usepackage{bookmark}
@@ -15,10 +17,12 @@
 \usepackage{subcaption}
 \usepackage{physics}
 \usepackage{csvsimple}
-\usepackage{lipsum}
+\usepackage{lipsum} % Text filler, don't use
 
 % For removing reference section title, we will add it manually later on.
 \renewcommand{\refname}{}
+
+\addbibresource{references.bib}
 
 % Setup for hyperlinks, for pretty URL's.
 \hypersetup{
@@ -57,53 +61,34 @@
 
 \begin{document}
 
-\textbf{Name/Surname:} John Doe \hfill \textbf{Date:} DD.MM.YYYY % Use Day.Month.Year standard
 
-\textbf{Student ID:} xxxxxxx \hfill \textbf{Signature:}
-    \includegraphics[width=0.02\linewidth]{./images/image.png} % Add your signature, use filename "image.png"!
+\begin{table}[htbp]
+\begin{tabularx}{}
+Name-Surname: \hfill Date: DD/MM/YYYY \\ 
+Student ID:   \hfill Session:         \\ 
+\end{tabularx}
+\end{table}
 
-
-\textbf{Section:} CHANGE THIS TO YOUR SECTION
-
-\begin{center}
-  \textbf{Experiment X and Y: Name of X \& Name of Y}
-\end{center}
-
-\section{Abstract}
-% Brief summary of both experiments and main findings.
 
 
 \section{Introduction \& Background/Theory}
 % Introduce both experiments and their theoretical backgrounds.
 % Explain the model and its underpinnings for both experiments.
 
+\subsection{Introduction}
+
+\subsection{Background/Theory}
 
 
-\section{Description of Experiment and Method(s)}
-\subsection{Experiment X: Name of X}
-% Description of Experiment X setup and methodology.
-
-
-
-\subsection{Experiment Y: Name of Y    }
-% Description of Experiment Y setup and methodology.
-
+\section{Methodology}
 
 \section{Results \& Discussion}
-\subsection{Experiment X: Name of X}
-% Results and discussion for Experiment X.
 
-
-
-\subsection{Experiment Y: Name of Y} 
-% Results and discussion for Experiment Y.
-
-
-
+\section{Additional Tasks}
 
 % Used this vspace command to reduce the distance between figures and the title, you can remove, comment or increase it as you wish.
-\vspace{-1cm}
-\section{Conclusions}
+
+\section{Discussion \& Conclusion}
 % Combined conclusions for both experiments.
 
 
@@ -130,14 +115,7 @@
 % In case you need a special section for Extra Credit, uncomment below line and starting doing the magic.
 % \section{Extra Credit}
 
-\section{References}
-
-% List of references in not-so-appropriate format, I was too lazy to use other packages. This does not give the output of APA 7th or latest APA; however, you can use other standards as you wish.
-\bibliographystyle{apalike}
-% To use all the cited sources, give intext citation as given example before, if you cannot do that but insist on adding those, uncomment below line. 
-% \nocite{*}
-\vspace{-1cm} % Reduce the distance between title and citations.
-\bibliography{references} % No .bib extension
+\printbibliography
 
 \section{Appendices}
 
@@ -165,5 +143,6 @@
 \subsection{3. Figures}
 % Include figures
 
+\section{Extra Credit Questions}
 
 \end{document}
